@@ -6,42 +6,43 @@
 
     <meta charset="utf-8">
     
-    <link href='https://fonts.googleapis.com/css?family=Boogaloo' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Boogaloo|Roboto' rel='stylesheet' type='text/css'>
     
     <style>
         body {
-            background-color: #FFA500;
+            background-color: #E5E5E5;   // i.e. i.e. #C0C0C0 or rgb(192,192,192)
+                                        // note that grey is #808080 or rgb(128,128,128) which is darker 
             font-family: Serif;
-            font-size: 16px;
-            margin: 10px 50px 10px 30px;
+            font-size: 16px;  
+            margin: 16px 50px 10px 30px;
         }
         header {
             font-family: Boogaloo, Monospace;
             font-size: 32px;
             font-weight: bold;
+            padding: 10px 0px 0px 0px;
            
         }
         footer {
             font-family: San-serif;
             font-style: italic;
             font-size: 12px;
-            margin: 10px 0px 10px 150px;
+            margin: 10px 0px 10px 0px;
         }
         article {
-            margin: 20px 50px 20px 10px;
+            padding: 10px 0px 10px 0px;
         }
         .my-image-style {
             width: 100px;
-            margin: 20px 50px 20px 60px;
             border-style: solid;
             border-color: green;
             border-width: 10px;
             border-radius: 50%;
         }
         .my-caption-style {
-            font-family: Monospace;
-            font-size: 11px;
-            margin: -20px 50px 20px 50px;
+            font-family: Roboto;
+            font-size: 9px;
+            padding: 0px 75px 0px 30px;
         }
     </style>
 
@@ -50,20 +51,25 @@
 </head>
 
 <body>
-
-    <header>Practice Makes Perfect</header>
+    <header><span style="color: #4285F4">Practice</span> 
+            <span style="color: #EA4335">Makes</span> 
+            <span style="color: #FBBC05">Perfect<span>
+    </header>
+    <p style="padding: 0px 0px 0px 70px">
+        <a href="https://www.flickr.com/photos/nicholas_t/7019639227/"><img class="my-image-style" src="NicholasRR.jpg" alt="Nicholas Rural Route"/></a> 
+    </p>
+    <p class="my-caption-style">
+        A <a href="https://www.flickr.com/photos/nicholas_t/7019639227/">rural route</a> at Richmond Township in Berks County
+    </p>
     
-    <div>
-        <a href="#"><img class="my-image-style" src="Nicholas.jpg" alt="Nicholas Rural Route"/></a> 
-        <p class="my-caption-style">This is a <a href="#">landscape</a></p>
-    </div>
     
     <article>
-        <p>Hello World!</p>
+        <h3>History of Richmond Township</h3>
+
+        <p>The area now known as Richmond Township was first settled sometime around 1740.  The Township was incorporated in 1752.</p>
     </article>
 
     <footer>This is a footnote.</footer>
-    
 </body>
 
 </html>
