@@ -51,9 +51,10 @@
 </head>
 
 <body>
-    <header><span style="color: #4285F4">Practice</span> 
-            <span style="color: #EA4335">Makes</span> 
-            <span style="color: #FBBC05">Perfect<span>
+    <header><span style="color: #4285F4">Richmond</span> 
+            <span style="color: #EA4335">Is</span> 
+            <span style="color: #FBBC05">Beautiful<span>
+            <span style="color: #34A853">!<span>
     </header>
     <p style="padding: 0px 0px 0px 70px">
         <a href="https://www.flickr.com/photos/nicholas_t/7019639227/"><img class="my-image-style" src="NicholasRR.jpg" alt="Nicholas Rural Route"/></a> 
@@ -61,15 +62,38 @@
     <p class="my-caption-style">
         A <a href="https://www.flickr.com/photos/nicholas_t/7019639227/">rural route</a> at Richmond Township in Berks County
     </p>
-    
-    
+        
     <article>
-        <h3>History of Richmond Township</h3>
-
+        <h4>History of Richmond Township</h4>
         <p>The area now known as Richmond Township was first settled sometime around 1740.  The Township was incorporated in 1752.</p>
     </article>
+    
+    <form action="#" method="post">
+        <input type="text" placeholder="Enter your name here" name="text1" required/>
+        <p>Do you like this site?
+            <label>
+                <input type="radio" name="radio1" value="yes"checked/>Yes
+                <input type="radio" name="radio1" value="no"/>No
+            </label>
+        </p>
+        <p>What is your occupation?
+                <input type="checkbox" name="checkbox1" value="student"/>Student
+                <input type="checkbox" name="checkbox1" value="teacher"/>Teacher
+                <input type="checkbox" name="checkbox1" value="civil_servant"/>Civil Servant
+                <input type="checkbox" name="checkbox1" value=""/>Other <input type="text" name="text2"/>
+        </p>
+        <p>We would be much appreciated if you donate to us :
+            <label>
+                <input type="radio" name="radio2" value="0" checked/>$NIL
+                <input type="radio" name="radio2" value="10"/>$10
+                <input type="radio" name="radio2" value="100"/>$100
+                <input type="radio" name="radio2" value=""/>Other $<input type="number" name="number1" min="1"/>           
+            </label>
+        </p>
+        <button type="submit">Confirm</button>
+    </form>
 
-    <footer>This is a footnote.</footer>
+    <footer>&copy; Richmond Township</footer>
 </body>
 
 </html>
