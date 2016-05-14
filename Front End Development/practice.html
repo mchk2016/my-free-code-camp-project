@@ -6,94 +6,171 @@
 
     <meta charset="utf-8">
     
-    <link href='https://fonts.googleapis.com/css?family=Boogaloo|Noto+Sans|Roboto' rel='stylesheet' type='text/css'/>
+    <title>Free Code Camp - Web Development</title>
+    
+    <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Boogaloo|Noto+Sans|Roboto' />
     
     <style>
-        body {
-            background-color: #E5E5E5;   
-            font-family: 'Noto Sans', Roboto, sans-serif;
-            font-size: 16px;  
-            margin: 16px 50px 10px 30px;
+        * {
+            margin: 0;
+            border-width: 0;
+            padding: 0;
+        }    
+    
+        #wrapper {
+            margin: 0 auto;
         }
-        header {
-            text-align: center;
-            font-family: Boogaloo, cursive;
-            font-size: 3.5em;
-            font-weight: bold;                       
-        }
-        footer {
-            text-align: right;
-            font-style: italic;
-            font-size: 0.75em;            
-        }
-        article {
-            text-align: left;
-        }
+    
         .my-image-style {
-            width: 200px;
+            width: 250px;
             border-style: solid;
             border-color: green;
             border-width: 0.625em;
             border-radius: 50%;
         }
+        
         .my-caption-style {
-            text-align: center;
             font-family: serif;
-            font-size: 0.6em;
+            font-size: 0.8em;         
+        }
+        
+        body, p {              
+            font-family: 'Noto Sans', Roboto, Verdana, Arial, Helvetica, sans-serif;
+            font-size: 16px; 
+            line-height: 36px;   
+            text-align: left;      
+        }
+                     
+        header {
+            float: auto;
+            margin: 0px 0px 0px 0px;  
+            border: 0px;
+            padding: 20px;
+            height: 50px;
+            background: #CCCCCC;    
+            text-align: center;
+        }
+                                
+        article {
+            margin: 0px 0px 0px 0px;
+            border: 0px;     
+            padding: 30px 0px 10px 50px;            
+            background: #F5F5F5;
+        }
+        
+        section.image1 p {
+            text-align: center;
+        }
+        
+        section.form1 {
+            margin: 20px;
+            border-style: solid;
+            border-color: #A0A0A0;
+            border-width: 2px;
+            border-radius: 15px;
+            padding: 10px 20px;            
             
         }
-    </style>
-
-    <title>Web Development</title>
+        
+        footer {   
+            margin: 0px 0px 0px 0px;
+            border: 0px;
+            padding: 0px 10px;            
+            height: 40px;            
+            background: #CCCCCC;
+            text-align: right;
+        }      
+        
+        h1 {
+            font-family: Boogaloo, cursive;
+            font-size: 3.5em;
+            font-weight: bold;          
+            color: #333333;            
+        }        
+        
+        h3 {
+            font-size: 1.3em;  
+            font-weight: bold;
+            color: #000000;     
+        }                     
+        
+        h5 {
+            font-size: 0.75em;  
+            font-style: italic;
+            font-weight: light;
+            color: #333333            
+        }         
+    </style> 
     
 </head>
 
 <body>
-    <header><span style="color: #4285F4">Richmond</span> 
-            <span style="color: #EA4335">Is</span> 
-            <span style="color: #FBBC05">Beautiful<span>
-            <span style="color: #34A853">!<span>
-    </header>
-    <p style="text-align: center">
-        <a href="https://www.flickr.com/photos/nicholas_t/7019639227/"><img class="my-image-style" src="NicholasRR.jpg" alt="Nicholas Rural Route"/></a> 
-    </p>
-    <p class="my-caption-style">
-        A <a href="https://www.flickr.com/photos/nicholas_t/7019639227/">rural route</a> at Richmond Township in Berks County
-    </p>
-        
-    <article>
-        <h4>History of Richmond Township</h4>
-        <p>The area now known as Richmond Township was first settled sometime around 1740.  The Township was incorporated in 1752.</p>
-    </article>
-    
-    <form action="#" method="post">
-        <input type="text" placeholder="Enter your name here" name="text1" required/>
-        <p>Do you like this site?
-            <label>
-                <input type="radio" name="radio1" value="yes"checked/>Yes
-                <input type="radio" name="radio1" value="no"/>No
-            </label>
-        </p>
-        <p>What is your occupation?
-            <label>
-                <input type="checkbox" name="checkbox1" value="student"/>Student
-                <input type="checkbox" name="checkbox1" value="teacher"/>Teacher
-                <input type="checkbox" name="checkbox1" value="civil_servant"/>Civil Servant
-                <input type="checkbox" name="checkbox1" value=""/>Other <input type="text" name="text2"/>
-            </label>
-        </p>
-        <p>We would be much appreciated if you donate to us :
-            <label>
-                <input type="radio" name="radio2" value="0" checked/>$NIL
-                <input type="radio" name="radio2" value="10"/>$10
-                <input type="radio" name="radio2" value="100"/>$100
-                <input type="radio" name="radio2" value=""/>Other $<input type="number" name="number1" min="1"/>           
-            </label>
-        </p>
-        <button type="submit">Confirm</button>
-    </form>
 
-    <footer>&copy; Richmond Township</footer>
+    <div id="wrapper">
+    
+        <header>
+            <h1><span style="color: #4285F4">Richmond</span> 
+                <span style="color: #EA4335">Is</span> 
+                <span style="color: #FBBC05">Beautiful<span>
+                <span style="color: #34A853">!<span>
+            </h1>
+        </header>
+        
+        <article>
+        
+            <section class="image1">
+                <p><a href="https://www.flickr.com/photos/nicholas_t/7019639227/">
+                    <img class="my-image-style" src="NicholasRR.jpg" alt="Nicholas Rural Route"/></a></p>
+            
+                <p class="my-caption-style">
+                    A <a href="https://www.flickr.com/photos/nicholas_t/7019639227/">
+                        rural route</a> at Richmond Township in Berks County</p>
+            </section>
+        
+            <h3>History of Richmond Township</h3>
+            
+            <p>The area now known as Richmond Township was first settled sometime around 1740.  
+               The Township was incorporated in 1752.</p>
+               
+            <section class="form1">
+                <form action="#" method="post">
+                    <p style="text-align: center"><input style="text-align: center; font-size: 1.2em" type="text" placeholder=" Enter your name here " name="text1" required/><p>
+                    
+                    <p>Do you like this site?&nbsp;&nbsp;
+                        <label>
+                            <input type="radio" name="radio1" value="yes"checked/>Yes&nbsp;&nbsp;
+                            <input type="radio" name="radio1" value="no"/>No
+                        </label></p>
+                        
+                    <p>What is your occupation?&nbsp;&nbsp;
+                        <label>
+                            <input type="checkbox" name="checkbox1" value="student"/>Student&nbsp;&nbsp;
+                            <input type="checkbox" name="checkbox1" value="teacher"/>Teacher&nbsp;&nbsp;
+                            <input type="checkbox" name="checkbox1" value="civil_servant"/>Civil Servant&nbsp;&nbsp;
+                            <input type="checkbox" name="checkbox1" value=""/>Other <input style="font-size: 1em" type="text" name="text2"/>
+                        </label></p>
+                        
+                    <p>We would be much appreciated if you donate to us :&nbsp;&nbsp;
+                        <label>
+                            <input type="radio" name="radio2" value="0" checked/>$NIL&nbsp;&nbsp;
+                            <input type="radio" name="radio2" value="10"/>$10&nbsp;&nbsp;
+                            <input type="radio" name="radio2" value="100"/>$100&nbsp;&nbsp;
+                            <input type="radio" name="radio2" value=""/>Other $<input style="font-size: 1em" type="number" name="number1" min="1"/>           
+                        </label></p>
+                        
+                    <p style="text-align: right"><button style="text-align: center; font-size: 1.2em" type="submit"><b>Confirm</b></button></p>
+                    
+                </form>
+            </section>
+            
+        </article>
+        
+        <footer>
+            <h5>&copy; Richmond Township</h5>
+        </footer>        
+
+    </div>
+    
 </body>
 
 </html>
