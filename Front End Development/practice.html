@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="en">
-
+<!-- This is a comment for HTML -->
 <head>
 
     <meta charset="utf-8">
@@ -11,9 +11,10 @@
     <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Boogaloo|Noto+Sans|Roboto' />
     
     <style>
-        * {
-            margin: 0;
-            border-width: 0;
+        /* This is a comment for CSS */
+        * {                     /* Zerolize HTML Document */
+            margin: 0;        
+            border-width: 0;  
             padding: 0;
         }    
     
@@ -34,25 +35,25 @@
             font-size: 0.8em;         
         }
         
-        body, p {              
+        body, p {          
             font-family: 'Noto Sans', Roboto, Verdana, Arial, Helvetica, sans-serif;
+            margin: 0px;     /* The distance from the outer division i.e. HTML document */
             font-size: 16px; 
-            line-height: 36px;   
+            line-height: 180%;   
             text-align: left;      
         }
                      
         header {
             float: auto;
-            margin: 0px 0px 0px 0px;  
-            border: 0px;
-            padding: 20px;
-            height: 50px;
-            background: #CCCCCC;    
-            text-align: center;
+            margin: 0px;  /* The distance from other divisions i.e. body/body/article/body */
+            border-bottom: 2px ridge #330000;
+            padding: 2em; /* The distance from the text's meanline/RHS/baseline/LHS */
+            line-height: 120%; /* The distance between a font's ascender and descender */
+            background: silver;  /* Cover area up to padding's boundaries */
         }
                                 
         article {
-            margin: 0px 0px 0px 0px;
+            margin: 0px;
             border: 0px;     
             padding: 30px 0px 10px 50px;            
             background: #F5F5F5;
@@ -73,11 +74,11 @@
         }
         
         footer {   
-            margin: 0px 0px 0px 0px;
-            border: 0px;
-            padding: 0px 10px;            
-            height: 40px;            
-            background: #CCCCCC;
+            margin: 0px;  /* The distance from other divisions i.e. article/body/body/body  */
+            border-top: 2px ridge #330000;            
+            padding: 0px 10px 0px 0px; /* The distance from the text's meanline/RHS/baseline/LHS */
+            line-height: 100%; /* The distance between a font's ascender and descender */
+            background: silver; /* Cover area up to padding's boundaries */
             text-align: right;
         }      
         
@@ -85,7 +86,10 @@
             font-family: Boogaloo, cursive;
             font-size: 3.5em;
             font-weight: bold;          
-            color: #333333;            
+            color: #333333;    
+            line-height: 120%;
+            text-align: center;
+            background: #CCCCCC;
         }        
         
         h3 {
@@ -109,11 +113,12 @@
     <div id="wrapper">
     
         <header>
-            <h1><span style="color: #4285F4">Richmond</span> 
-                <span style="color: #EA4335">Is</span> 
-                <span style="color: #FBBC05">Beautiful<span>
-                <span style="color: #34A853">!<span>
-            </h1>
+                <h1>
+                    <span style="color: #4285F4"><img src="tree.png"/>&nbsp;Richmond</span> 
+                    <span style="color: #EA4335">Is</span> 
+                    <span style="color: #FBBC05">Beautiful<span>
+                    <span style="color: #34A853">!&nbsp;<img src="tree.png"/><span>
+                </h1>
         </header>
         
         <article>
@@ -158,7 +163,7 @@
                             <input type="radio" name="radio2" value=""/>Other $<input style="font-size: 1em" type="number" name="number1" min="1"/>           
                         </label></p>
                         
-                    <p style="text-align: right"><button style="text-align: center; font-size: 1.2em" type="submit"><b>Confirm</b></button></p>
+                    <p style="text-align: right"><button style="text-align: center; font-size: 1em" type="submit"><b>Confirm</b></button></p>
                     
                 </form>
             </section>
