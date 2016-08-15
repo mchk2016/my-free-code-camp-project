@@ -1,0 +1,85 @@
+/* Text, Background, Shadows, Border and Radius, Transition, Transform */
+@import url(https://fonts.googleapis.com/css?family=Boogaloo|Roboto+Slab);
+
+body {          
+        font-family: 'Roboto Slab', serif;       
+        font-size: 16px; 
+        line-height: 180%;   
+        text-align: left;      
+        background-color: #F5F5F5;
+}
+
+header {
+        background-color: silver;  /* Cover area up to padding's boundaries */
+        border-bottom: ridge 3px #330000;
+}
+                                
+section {   
+        background-color: #F5F5F5;
+}
+        
+footer {  
+        line-height: 100%; /* The distance between a font's ascender and descender */
+        text-align: right;
+        background-color: silver; /* Cover area up to padding's boundaries */
+        border-top: ridge 2px #330000;          
+}     
+
+h1 {
+        font-family: Boogaloo, cursive;
+        font-size: 4.5em;
+        font-weight: bold;          
+        color: #333333;    
+        text-align: center;
+        border-radius: 60px;
+        background-color: white;
+}        
+        
+h3 {
+        font-size: 1.3em;  
+        font-weight: bold;
+        color: #000000;     
+}                     
+        
+h5 {
+        font-style: italic;
+        font-size: 0.75em;  
+        font-weight: light;
+        color: #333333            
+}     
+        
+figure {
+        text-align: center;
+}
+        
+figcaption {
+        font-family: serif;
+        font-size: 0.8em;       
+        text-align: center;
+}        
+       
+div.form1 {
+        border: solid 2px #A0A0A0;
+        border-radius: 15px;       
+}        
+  
+button[type="submit"] {
+        display: inline-block;
+        background-color: #4CAF50; /* Green */
+        border-radius: 12px;
+        color: white;
+        text-align: center;
+        text-decoration: none;        
+        font-size: 16px;
+}
+
+button[type="reset"] {
+        display: inline-block;
+        background-color: black;
+        border-radius: 12px;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: bold;
+} 

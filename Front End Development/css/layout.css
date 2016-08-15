@@ -1,0 +1,46 @@
+@import url(reset.css);
+
+#wrapper {
+        margin: 0 auto;
+}
+
+header {
+        float: auto;
+        margin: 0px;  /* The distance from other divisions i.e. body/body/article/body */
+        padding: 2em; /* The distance from the content's (i.e. h1) top/right/bottom/left */     
+}
+                                
+section {
+        margin: 0px 10px;
+        padding: 30px 0px 10px 50px;
+}
+        
+footer {   
+        margin: 0px;  /* The distance from other divisions i.e. article/body/body/body  */  
+        padding: 0px 10px 0px 0px; /* The distance from the content's (i.e. text)top/right/bottom/left */
+}      
+
+h1 {
+        padding: 0.2em; /* The distance from the content's (i.e. bigger of text or tree image) meanline/right/baseline/left */
+}        
+
+div.image1 {
+        margin: 15px 0px 60px 0px; 
+}
+        
+div.content1 {
+        margin: 15px 0px 15px 0px;
+}
+        
+div.form1 {
+        margin: 15px 10px 15px 0px;
+        padding: 10px 30px;          
+}        
+
+button[type="submit"] {
+        padding: 15px 36px;
+}
+
+button[type="reset"] {
+        padding: 12px 28px;
+} 

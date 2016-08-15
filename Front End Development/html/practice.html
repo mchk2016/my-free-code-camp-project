@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="en"> <!-- <html></html> is a container for all other HTML elements. -->
+
+<head> <!-- <head></head> is a container for information about the document and its relation with other resources. -->
+
+    <meta charset="utf-8"/>
+    
+    <title>Free Code Camp - Web Development</title>
+    
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="../css/layout.css" />
+    
+    <style type="text/css" media="screen">
+        /* styles and layout for special items in CSS */
+   
+        .specialeffect {
+            width: 250px;
+            border: solid 0.625em green;
+            border-radius: 50%;
+        }               
+    </style> 
+    
+</head>
+
+<body> <!-- <body></body> is a container for the content of the document. -->
+
+    <div id="wrapper">
+    
+        <header>
+                <h1>
+                    <span style="color: #4285F4"><img src="../docs-assets/images/tree.png"/>&nbsp;Richmond</span> 
+                    <span style="color: #EA4335">Is</span> 
+                    <span style="color: #FBBC05">Beautiful<span>
+                    <span style="color: #34A853">!&nbsp;<img src="../docs-assets/images/tree.png"/><span>
+                </h1>
+        </header>
+        
+        <section>
+        
+            <div class="image1">        
+                <figure> 
+                    <a href="https://www.flickr.com/photos/nicholas_t/7019639227/">
+                        <img class="specialeffect" src="../docs-assets/images/NicholasRR.jpg" alt="Nicholas Rural Route"/>
+                    </a>
+                </figure>
+                         
+                <figcaption>
+                    A <a href="https://www.flickr.com/photos/nicholas_t/7019639227/">
+                        rural route</a> at Richmond Township in Berks County
+                </figcaption>
+            </div>
+            
+            <div class="content1">        
+                <h3>History of Richmond Township</h3>
+                
+                <p>The area now known as Richmond Township was first settled sometime around 1740.  
+                   The Township was incorporated in 1752.</p>            
+            </div>
+            
+            <div class="form1">
+                <form action="#" method="post">
+                    <p style="text-align: center"><input style="text-align: center; font-size: 1.2em" type="text" placeholder=" Enter your name here " name="visitor" required/><p>
+                    
+                    <p>Do you like this site?&nbsp;&nbsp;
+                        <label>
+                            <input type="radio" name="like_or_not" value="Yes"checked/>Yes&nbsp;&nbsp;
+                            <input type="radio" name="like_or_not" value="No"/>No
+                        </label></p>
+                        
+                    <p>What is your occupation?&nbsp;&nbsp;
+                        <label>
+                            <input type="checkbox" name="job" value="Student"/>Student&nbsp;&nbsp;
+                            <input type="checkbox" name="job" value="Teacher"/>Teacher&nbsp;&nbsp;
+                            <input type="checkbox" name="job" value="Civil Servant"/>Civil Servant&nbsp;&nbsp;
+                            <input type="checkbox" name="job" value=""/>Other <input style="font-size: 1em" type="text" name="other_job"/>
+                        </label></p>
+                        
+                    <p>We would be much appreciated if you donate to us :&nbsp;&nbsp;
+                        <label>
+                            <input type="radio" name="donation" value="$0" checked/>$NIL&nbsp;&nbsp;
+                            <input type="radio" name="donation" value="$10"/>$10&nbsp;&nbsp;
+                            <input type="radio" name="donation" value="$100"/>$100&nbsp;&nbsp;
+                            <input type="radio" name="donation" value=""/>Other $<input style="font-size: 1em" type="number" name="other_amount" min="1"/>           
+                        </label></p>
+                    
+                    <br>
+                    <p style="text-align: right"><button type="submit" value="send">Submit</button></p>   
+                    <p style="text-align: left"><button type="reset">Reset</button></p>  
+                </form>
+            </div>
+            
+        </section>
+        
+        <footer>
+            <h5>&copy; Richmond Township</h5>
+        </footer>        
+
+    </div>
+    
+</body>
+
+</html>
