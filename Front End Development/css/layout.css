@@ -2,6 +2,53 @@
 
 #wrapper {
         margin: 0 auto;
+        padding: 0 0.5em 0 0.5em;
+}
+
+.col-wrapper {    
+    /* column-width, column-gap, and column-rule settings, available in all broswers */
+    -webkit-column-width: 260px;  
+    -webkit-column-gap: 0.3em;
+    -webkit-column-rule: 2px none #ccc;
+    -moz-column-width: 260px;  
+    -moz-column-gap: 0.3em;
+    -moz-column-rule: 2px none #ccc;  
+    column-width: 260px;  /* You can use "column-count: 3" instead */
+    column-gap: 0.3em;
+    column-rule: 2px none #ccc; /* other options: "dotted" */
+
+}
+
+.col-wrapper h1 {
+    margin: 0 0.8em;
+    /* column-span settings, not available in Firefox! */
+    -webkit-column-span: all;
+    column-span: all; /* other options: "none" */     
+}
+
+.col-wrapper h3 {
+    margin: 0 0.1em;
+}
+
+.col-wrapper p {
+    margin: 0 0.8em;
+    max-width: 100%;
+    /* break-inside settings, not available in Firefox! */
+    -webkit-column-break-inside: avoid-column;
+    page-break-inside: avoid-column; 
+    break-inside: avoid-column; /* other options: "avoid", "avoid-page" */
+}
+
+.col-wrapper blockquote {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 40px;
+    margin-right: 40px;
+    /* break-inside settings, not available in Firefox! */
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid; 
+    break-inside: avoid; /* other options: "avoid-page", "avoid-column" */
 }
 
 header {

@@ -1,5 +1,5 @@
 /* Text, Background, Shadows, Border and Radius, Transition, Transform */
-@import url(https://fonts.googleapis.com/css?family=Boogaloo|Roboto+Slab);
+@import url(https://fonts.googleapis.com/css?family=Boogaloo|Roboto|Roboto+Slab|Inconsolata); 
 
 body {          
         font-family: 'Roboto Slab', serif;       
@@ -23,7 +23,7 @@ footer {
         text-align: right;
         background-color: silver; /* Cover area up to padding's boundaries */
         border-top: ridge 2px #330000;          
-}     
+}   
 
 h1 {
         font-family: Boogaloo, cursive;
@@ -34,19 +34,20 @@ h1 {
         border-radius: 60px;
         background-color: white;
 }        
-        
+    
 h3 {
         font-size: 1.3em;  
         font-weight: bold;
-        color: #000000;     
-}                     
-        
+        color: #000000; 
+}                  
+
+ 
 h5 {
         font-style: italic;
         font-size: 0.75em;  
         font-weight: light;
         color: #333333            
-}     
+}   
         
 figure {
         text-align: center;
@@ -83,3 +84,34 @@ button[type="reset"] {
         font-size: 12px;
         font-weight: bold;
 } 
+
+.col-wrapper * {    
+    background-color: #F5F5F5;
+}
+
+.col-wrapper h1 {
+        font-family: Boogaloo, cursive;
+        font-size: 3em;
+        line-height: 80%;
+        text-align: center; 
+}
+
+.col-wrapper h3 {
+        font-family: 'Roboto', sans-serif; 
+        font-size: 1.5em;
+        line-height: 120%;
+        text-align: left;
+}
+     .col-wrapper p {
+        font-family: 'Roboto Slab', serif; 
+        font-size: 0.8em;
+        line-height:108%;
+        text-align: justify;
+}        
+
+.col-wrapper blockquote {            
+        font-family: Inconsolata, monospace;
+        font-size: 1em;
+        line-height:90%;
+        text-align: left;
+}  
