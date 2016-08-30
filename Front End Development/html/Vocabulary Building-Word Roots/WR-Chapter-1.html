@@ -21,15 +21,7 @@
         #wrapper {
             margin: 0 auto;
         }
-        #myForm1 {
-            margin: 0px 0px 15px 0px;
-            border: solid 2px #A0A0A0;
-            border-radius: 15px;
-            padding: 20px 30px;     
-            box-shadow: 15px 15px grey;
-            background-color: #DEDEDE;
-        }
-        #myForm2 {
+        #myForm1,#myForm2 {
             margin: 0px 0px 15px 0px;
             border: solid 2px #A0A0A0;
             border-radius: 15px;
@@ -44,18 +36,29 @@
             background-color: #DEDEDE;
             font-size: 0.9em;
         }
-        .vocabzone {
+        .vocab {
             font-family: 'Roboto Mono', monospace; 
-            font-size: 0.9em;
+            font-size: 1em;
+            font-weight: bold;
             color: green;
+        }
+        .definition {
+            font-family: 'Roboto Mono', monospace; 
+            font-size: 0.8em;
+            color: #565051;
         }
         .example {
             font-family: 'Cardo', serif;
             font-size: 1em;
             font-style: italic;
-        }    
-        .zonemargin {
+            color: #565051;
+        }
+        .vocablayout {
             margin-left: 1em;
+            margin-bottom: -0.2em;
+        }
+        .examplelayout {
+            margin-left: 2em;
             margin-bottom: -0.2em;
         }
         body, p {          
@@ -85,7 +88,7 @@
             text-align: center; 
         }        
         span {
-            color: blue;
+            color: blue;            
         }
         pre {
             font-family: 'Roboto Mono', monospace; 
@@ -135,10 +138,23 @@
     </style>
     
     <script type="text/javascript">
+        
+        var agnostic = new Audio("http://www.oxfordlearnersdictionaries.com/media/english/us_pron/a/agn/agnos/agnostic__us_1.mp3");
+        var amoral = new Audio("http://www.oxfordlearnersdictionaries.com/media/english/us_pron/a/amo/amora/amoral__us_1.mp3");
+        var anarchy = new Audio("http://www.oxfordlearnersdictionaries.com/media/english/us_pron/a/ana/anarc/anarchy__us_1.mp3");
+        var anecdote = new Audio("http://www.oxfordlearnersdictionaries.com/media/english/us_pron/a/ane/anecd/anecdote__us_1.mp3");
+        var anemia = new Audio("http://www.oxfordlearnersdictionaries.com/media/english/us_pron/a/ana/anaem/anaemia__us_1.mp3");
+        var anesthetic = new Audio("http://www.oxfordlearnersdictionaries.com/media/english/us_pron/a/ana/anaes/anaesthetic__us_1.mp3");
+        var anomaly = new Audio("http://www.oxfordlearnersdictionaries.com/media/english/us_pron/a/ano/anoma/anomaly__us_1.mp3");
+        var anonymous = new Audio("http://www.oxfordlearnersdictionaries.com/media/english/us_pron/a/ano/anony/anonymous__us_1.mp3");
+        var asymmetrical = new Audio("http://www.oxfordlearnersdictionaries.com/media/english/us_pron/a/asy/asymm/asymmetrical__us_1.mp3");
+        var atheist = new Audio("http://www.oxfordlearnersdictionaries.com/media/english/us_pron/a/ath/athei/atheist__us_1.mp3");
+        var atypical = new Audio("http://www.oxfordlearnersdictionaries.com/media/english/us_pron/a/aty/atypi/atypical__us_1.mp3");
+        
         var modelAnswer1 = ["anarchy", "agnostic", "anomaly", "asymmetrical", "amoral"]; 
         var modelAnswer2 = ["anecdotes", "asymmetrical", "anonymous", "atypical", "Anarchy",
                             "atheist", "agnostic", "amoral", "anesthetic", "anemia", "anomaly"];
-        
+                
         function checkAnswer1() {
             var score = 0;
             var scorePercent;
@@ -199,30 +215,41 @@
             for (j=1; j<=modelAnswer2.length; j++) {
                 document.getElementById("ans2-" + j).innerHTML = "";
             }
-        }       
+        }           
+      
     </script>
 
 </head>
 
-<body>
-    <div id="wrapper">
-    
+<body>      
+    <div id="wrapper">    
         <section>      
             <h3>CHAPTER 1: A, AN&#8212;not, without; unusual or irregular</h3>     
             <br />
-            <p>Study the sample sentences below before doing the following exercises.</p>
-  
-            <p class="zonemargin"><span class="vocabzone">agnostic</span>      <span class="example">He had lost his former faith and had become an <u>agnostic</u>.</span></p>
-            <p class="zonemargin"><span class="vocabzone">amoral</span>        <span class="example">Infants are <u>amoral</u> because they have not learned the difference between right and wrong.</span></p>
-            <p class="zonemargin"><span class="vocabzone">anarchy</span>       <span class="example">The overthrow of the government resulted in <u>anarchy</u>.</span></p>
-            <p class="zonemargin"><span class="vocabzone">anecdote</span>      <span class="example">The speaker began his talk with an entertaining <u>anecdote</u>.</span></p>
-            <p class="zonemargin"><span class="vocabzone">anemia</span>        <span class="example">Her weakness was caused by <u>anemia</u>.</span></p>
-            <p class="zonemargin"><span class="vocabzone">anesthetic</span>    <span class="example">Before the operation, he was given <u>anesthetic</u>.</span></p>
-            <p class="zonemargin"><span class="vocabzone">anomaly</span>       <span class="example">As a bird, the ostrich is an <u>anomaly</u> in nature. It cannot fly.</span></p>
-            <p class="zonemargin"><span class="vocabzone">anonymous</span>     <span class="example">The donor of the new hospital wing wished to remain <u>anonymous</u>.</span></p>
-            <p class="zonemargin"><span class="vocabzone">asymmetrical</span>  <span class="example">At the fashion show, some designers featured <u>asymmetrical</u> hemlines.</span></p>
-            <p class="zonemargin"><span class="vocabzone">atheist</span>       <span class="example">As an <u>atheist</u>, she objected to the nativity scene in the town square at Christmas.</span></p>
-            <p class="zonemargin"><span class="vocabzone">atypical</span>      <span class="example">A classical concert performed by a rock band would certainly be <u>atypical</u>.</span></p>
+            <p>Study the definition and sample sentence of the following words.</p> 
+            <p>(N.B. Click the word to hear its American pronunciation.)</p>  
+            <p class="vocablayout"><span class="vocab" onclick="agnostic.play()">agnostic</span>       <span class="definition">noun — one who does not know whether there is a God.</span></p> 
+              <p class="examplelayout"><span class="example">He had lost his former faith and had become an <u>agnostic</u>.</span></p>
+            <p class="vocablayout"><span class="vocab" onclick="amoral.play()">amoral</span>         <span class="definition">adjective — unable to distinguish between right and wrong; neither moral nor immoral.</span></p>   
+              <p class="examplelayout"><span class="example">Infants are <u>amoral</u> because they have not learned the difference between right and wrong.</span></p>
+            <p class="vocablayout"><span class="vocab" onclick="anarchy.play()">anarchy</span>        <span class="definition">noun — lit. without a ruler; political disorder and confusion.</span></p>       
+              <p class="examplelayout"><span class="example">The overthrow of the government resulted in <u>anarchy</u>.</span></p>
+            <p class="vocablayout"><span class="vocab" onclick="anecdote.play()">anecdote</span>       <span class="definition">noun — a short account of an interesting or humorous incident that is an aside to the main idea.</span></p>    
+              <p class="examplelayout"><span class="example">The speaker began his talk with an entertaining <u>anecdote</u>.</span></p>
+            <p class="vocablayout"><span class="vocab" onclick="anemia.play()">anemia</span>         <span class="definition">noun — a deficiency of red blood cells.</span></p>        
+              <p class="examplelayout"><span class="example">Her weakness was caused by <u>anemia</u>.</span></p>
+            <p class="vocablayout"><span class="vocab" onclick="anesthetic.play()">anesthetic</span>     <span class="definition">noun — a drug that causes one to be insensitive to pain.</span></p> 
+              <p class="examplelayout"><span class="example">Before the operation, he was given <u>anesthetic</u>.</span></p>
+            <p class="vocablayout"><span class="vocab" onclick="anomaly.play()">anomaly</span>        <span class="definition">noun — a rare exception; something that is not normal.</span></p>     
+              <p class="examplelayout"><span class="example">As a bird, the ostrich is an <u>anomaly</u> in nature. It cannot fly.</span></p>
+            <p class="vocablayout"><span class="vocab" onclick="anonymous.play()">anonymous</span>      <span class="definition">adjective — having an unknown or unacknowledged name.</span></p>     
+              <p class="examplelayout"><span class="example">The donor of the new hospital wing wished to remain <u>anonymous</u>.</span></p>
+            <p class="vocablayout"><span class="vocab" onclick="asymmetrical.play()">asymmetrical</span>   <span class="definition">adjective — not having both sides exactly alike; not symmetrical.</span></p>  
+              <p class="examplelayout"><span class="example">At the fashion show, some designers featured <u>asymmetrical</u> hemlines.</span></p>
+            <p class="vocablayout"><span class="vocab" onclick="atheist.play()">atheist</span>        <span class="definition">noun — one who is without a God; one who denies the existence of God.</span></p>       
+              <p class="examplelayout"><span class="example">As an <u>atheist</u>, she objected to the nativity scene in the town square at Christmas.</span></p>
+            <p class="vocablayout"><span class="vocab" onclick="atypical.play()">atypical</span>       <span class="definition">adjective — not typical.</span></p>      
+              <p class="examplelayout"><span class="example">A classical concert performed by a rock band would certainly be <u>atypical</u>.</span></p>
         </section>
         
         <section>
@@ -233,9 +260,9 @@
                 <h4>EXERCISE 1-1</h4>
                 <p>Write the correct word next to its definition.</p>
                 <p><img src="../../docs-asset/images/spacer.gif" alt=" " width="1" height="1" style="margin-right: 5px; margin-left: 5px;" /></p>
-                <div class="vocabzone zonemargin"><pre>agnostic     amoral      anarchy     anecdote        anemia</pre>
-                                                  <pre>anesthetic   anomaly     anonymous   asymmetrical    atheist</pre>                
-                                                  <pre>atypical</pre>
+                <div class="vocab vocablayout"><pre>agnostic     amoral      anarchy     anecdote        anemia</pre>
+                                               <pre>anesthetic   anomaly     anonymous   asymmetrical    atheist</pre>                
+                                               <pre>atypical</pre>
                 </div>
                 <p><img src="../../docs-asset/images/spacer.gif" alt=" " width="1" height="1" style="margin-right: 5px; margin-left: 5px;" /></p>
                 <p>1. <input type="text" id="yourAnswer1-1" size="15" /> political disorder <span id="ans1-1"></span></p>
@@ -261,9 +288,9 @@
                 <h4>EXERCISE 1-2</h4>
                 <p>Write the appropriate word (with correct case, tense, and form).</p>
                 <p><img src="../../docs-asset/images/spacer.gif" alt=" " width="1" height="1" style="margin-right: 5px; margin-left: 5px;" /></p>
-                <div class="vocabzone zonemargin"><pre>agnostic     amoral      anarchy     anecdote        anemia</pre>
-                                                  <pre>anesthetic   anomaly     anonymous   asymmetrical    atheist</pre>                
-                                                  <pre>atypical</pre>
+                <div class="vocab vocablayout"><pre>agnostic     amoral      anarchy     anecdote        anemia</pre>
+                                               <pre>anesthetic   anomaly     anonymous   asymmetrical    atheist</pre>                
+                                               <pre>atypical</pre>
                 </div>
                 <p><img src="../../docs-asset/images/spacer.gif" alt=" " width="1" height="1" style="margin-right: 5px; margin-left: 5px;" /></p>
                 <p>1. To add interest, the professor sprinkled her lectures with <input type="text" id="yourAnswer2-1" size="12" />.<span id="ans2-1"></span></p>
@@ -277,19 +304,22 @@
                 <p>9. The dentist gave <input type="text" id="yourAnswer2-9" size="12" /> to the patient before pulling all her teeth.<span id="ans2-9"></span></p>
                 <p>10. To fight her <input type="text" id="yourAnswer2-10" size="12" />, the doctor prescribed iron pills.<span id="ans2-10"></span></p>
                 <p>11. His outgoing nature made him an <input type="text" id="yourAnswer2-11" size="12" /> in his shy family.<span id="ans2-11"></span></p>
+                <br />
             </form>                
 
             <p style="text-align: center"><button type="submit" onclick="checkAnswer2()">SUBMIT</button></p>      
 
             <p style="text-align: left"><button type="button" onclick="getAnswer2()">SHOW THE ANSWERS TO EXERCISE 1-2</button></p>         
             
-        </section>         
-        
+        </section>    
     </div>  
     
     <section>
+    
         <footer>Designed by MCHK &copy;2016</footer>
+        
     </section>
+    
 </body>
 
 </html>
