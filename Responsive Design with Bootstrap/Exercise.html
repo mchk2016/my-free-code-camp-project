@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head> 
+
+    <meta charset="utf-8"/>
+    <title>Free Code Camp - Responsive Design with Bootstrap</title>
+    <link rel="stylesheet" href="local/bootstrap-4.0.0-alpha.5-dist/css/bootstrap.css" type="text/css"> 
+    <link rel="stylesheet" href="local/font-awesome-4.7.0/css/font-awesome.css" type="text/css"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster" type="text/css">
+    <style>
+        h1 {
+            font-family: Helvetica, Arial;
+        }
+        
+        h2 {
+            font-family: Lobster, Monospace;
+        }
+        
+        .my-box-style1 {
+            border: solid 1px black;
+        }
+        
+        .thick-green-border {
+        border-color: green;
+        border-width: 10px;
+        border-style: solid;
+        border-radius: 50%;
+        }
+    </style> 
+    
+</head>
+
+<body> 
+    <h1 class="text-primary text-xs-center">Cats' World</h1>  <!-- Use "text-center" for Bootstrap 3 -->
+    <div class="container-fluid">
+        <div class="row text-xs-center">
+            <div class="col-xs-8">
+                <h2 class="text-primary">CatPhotoApp</h2>
+            </div>
+            <div class="col-xs-4">
+                    <a href="#"><img class="img-responsive thick-green-border" 
+                         src="https://bit.ly/fcc-relaxing-cat" 
+                         alt="A cute orange cat lying on its back."></a>
+            </div>
+        </div>
+        <div class="row text-xs-center">
+            <div class="col-xs-4 col-md-6 col-lg-8 my-box-style1">R1C1</div>
+            <div class="col-xs-8 col-md-6 col-lg-4 my-box-style1">R1C2</div>
+        </div>
+        <div class="row text-xs-center">
+            <div class="col-md-4 my-box-style1">R2C1</div>
+            <div class="col-md-4 my-box-style1">R2C2</div>
+            <div class="col-md-4 my-box-style1">R2C3</div>
+        </div>
+        <div class="row text-xs-center">
+            <img class="img-responsive" src="https://bit.ly/fcc-running-cats" 
+                  alt="Three kittens running towards the camera."/>
+        </div>
+        <div class="row">
+            <div class="col-xs-4">
+                <button class="btn btn-block btn-primary"><i class="fa fa-thumbs-up">Like</i>
+                </button>
+            </div>
+            <div class="col-xs-4">
+                <button class="btn btn-block btn-info"><i class="fa fa-info-circle">Info</i>
+                </button>
+            </div>
+            <div class="col-xs-4">
+                <button class="btn btn-block btn-danger"><i class="fa fa-trash">Delete</i>
+                </button>
+            </div>
+        </div>
+        <p>There are three things that cats <span class="text-danger">hate:</span></p>
+        <form action="/submit-cat-photo">
+            <div class="row">
+                <div class="col-xs-6">
+                    <label><input type="radio" name="indoor-outdoor"> Indoor</label>
+                </div>
+                <div class="col-xs-6">
+                    <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4">
+                    <label><input type="checkbox" name="personality"> Loving</label>
+                </div>
+                <div class="col-xs-4">
+                    <label><input type="checkbox" name="personality"> Lazy</label>
+                </div>
+                <div class="col-xs-4">
+                    <label><input type="checkbox" name="personality"> Crazy</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-7">
+                    <input class="form-control" type="text" placeholder="cat photo URL" required>
+                </div>
+                <div class="col-xs-5">
+                    <button class="btn btn-primary"type="submit"><i class="fa fa-paper-plane">Submit</i></button>
+                </div>
+            </div>
+        </form>     
+        
+    </div>
+
+ 
+    <script src="local/bootstrap-4.0.0-alpha.5-dist/css/bootstrap.js"> 
+    </script>
+</body>
+
+</html>
